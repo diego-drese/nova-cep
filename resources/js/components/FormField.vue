@@ -38,7 +38,8 @@ export default {
 
   data: () => ({
     apiResourceUrl: '/sereny/nova-cep/cep',
-    loading: false
+    loading: false,
+    mask: '#####-###'
   }),
 
   methods: {
