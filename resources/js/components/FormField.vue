@@ -13,6 +13,9 @@
         v-model="value"
         :class="errorClasses"
         :placeholder="field.name"
+        v-maska
+        :data-maska="mask"
+        data-maska-eager
         @change="handleChange"
       />
       <Loader v-if="loading" width="30" height="20" />
@@ -24,9 +27,12 @@
 <script>
 import { FormField, HandlesValidationErrors } from 'laravel-nova'
 import { chain, forEach, keys } from 'lodash';
+import { vMaska } from 'maska'
 
 export default {
   mixins: [FormField, HandlesValidationErrors],
+
+  directives: {maska: vMaska},
 
   props: ['resourceName', 'resourceId', 'field'],
 

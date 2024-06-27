@@ -29,4 +29,8 @@ class Cep extends Field
             'city' => ['localidade', 'uf']
         ]
     ];
+
+    public function options($options) {
+        return $this->withMeta(compact('options'));
+    }
 }
