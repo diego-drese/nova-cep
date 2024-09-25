@@ -5,8 +5,7 @@ namespace DiegoDrese\NovaCep\Fields;
 use Laravel\Nova\Fields\Field;
 use Laravel\Nova\Fields\SupportsDependentFields;
 
-class Cep extends Field
-{
+class Cep extends Field {
     use SupportsDependentFields;
 
     /**

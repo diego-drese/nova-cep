@@ -25,8 +25,8 @@ class NovaCepServiceProvider extends ServiceProvider
         Nova::serving(function (ServingNova $event) {
             $this->bootTranslations();
 
-            Nova::script('diego-drese-nova-cep-old', __DIR__.'/../dist/js/field.js');
-            Nova::style('diego-drese-nova-cep-old', __DIR__.'/../dist/css/field.css');
+            Nova::script('nova-cep', __DIR__.'/../dist/js/field.js');
+            Nova::style('nova-cep', __DIR__.'/../dist/css/field.css');
         });
     }
 
