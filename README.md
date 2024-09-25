@@ -7,7 +7,7 @@ A Laravel Nova field enables automatic address data completion by CEP lookup.
 You can install the package in to a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require sereny/nova-cep-old
+composer require diego-drese/nova-cep
 ```
 
 ![example](/.github/images/example.gif)
