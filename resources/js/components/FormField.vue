@@ -34,7 +34,9 @@ export default {
     apiResourceUrl: '/diego-drese/nova-cep-old/cep',
     loading: false
   }),
-
+  mounted() {
+    Inputmask('99999-999').mask(this.$refs.cepInput)
+  },
   methods: {
     setInitialValue() {
       this.value = this.field.value || ''

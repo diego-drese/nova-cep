@@ -20,5 +20,8 @@
     "postcss": "^8.3.11",
     "vue-loader": "^16.8.3",
     "vuex": "^4.1.0"
+  },
+  "dependencies": {
+    "inputmask": "^5.0.9"
   }
 }
