@@ -31,7 +31,7 @@ export default {
   props: ['resourceName', 'resourceId', 'field'],
 
   data: () => ({
-    apiResourceUrl: '/diego-drese/nova-cep-old/cep',
+    apiResourceUrl: '/diego-drese/nova-cep/cep',
     loading: false
   }),
   mounted() {

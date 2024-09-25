@@ -5,7 +5,7 @@ mix.setPublicPath('dist')
     .vue({ version: 3 })
     .webpackConfig({
         externals: {
-            'laravel-nova': 'laravel-nova',
+            'laravel-nova': 'Nova',
         },
         resolve: {
             extensions: ['.js', '.json', '.vue'],

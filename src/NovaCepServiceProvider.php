@@ -51,8 +51,8 @@ class NovaCepServiceProvider extends ServiceProvider
             return;
         }
 
-        Route::prefix('diego-drese/nova-cep-old')
-            ->name('diego-drese.nova-cep-old.')
+        Route::prefix('diego-drese/nova-cep')
+            ->name('diego-drese.nova-cep.')
             ->group(__DIR__ . '/../routes/api.php');
     }
 
@@ -64,7 +64,7 @@ class NovaCepServiceProvider extends ServiceProvider
     protected function loadTranslations()
     {
         $this->loadJSONTranslationsFrom(__DIR__ . '/../resources/lang');
-        $this->loadJSONTranslationsFrom(resource_path('lang/vendor/diego-drese/nova-cep-old'));
+        $this->loadJSONTranslationsFrom(resource_path('lang/vendor/diego-drese/nova-cep'));
     }
 
     /**
@@ -77,6 +77,6 @@ class NovaCepServiceProvider extends ServiceProvider
         $locale = $this->app->getLocale();
 
         Nova::translations(__DIR__ . "/../resources/lang/{$locale}.json");
-        Nova::translations(resource_path("lang/vendor/diego-drese/nova-cep-old/$locale.json"));
+        Nova::translations(resource_path("lang/vendor/diego-drese/nova-cep/$locale.json"));
     }
 }
