@@ -1,6 +1,6 @@
 <?php
 
-namespace Sereny\NovaCep;
+namespace DiegoDrese\NovaCep;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
@@ -25,8 +25,8 @@ class NovaCepServiceProvider extends ServiceProvider
         Nova::serving(function (ServingNova $event) {
             $this->bootTranslations();
 
-            Nova::script('sereny-nova-cep', __DIR__.'/../dist/js/field.js');
-            Nova::style('sereny-nova-cep', __DIR__.'/../dist/css/field.css');
+            Nova::script('diego-drese-nova-cep-old', __DIR__.'/../dist/js/field.js');
+            Nova::style('diego-drese-nova-cep-old', __DIR__.'/../dist/css/field.css');
         });
     }
 
@@ -51,8 +51,8 @@ class NovaCepServiceProvider extends ServiceProvider
             return;
         }
 
-        Route::prefix('sereny/nova-cep')
-            ->name('sereny.nova-cep.')
+        Route::prefix('diego-drese/nova-cep-old')
+            ->name('diego-drese.nova-cep-old.')
             ->group(__DIR__ . '/../routes/api.php');
     }
 
@@ -64,7 +64,7 @@ class NovaCepServiceProvider extends ServiceProvider
     protected function loadTranslations()
     {
         $this->loadJSONTranslationsFrom(__DIR__ . '/../resources/lang');
-        $this->loadJSONTranslationsFrom(resource_path('lang/vendor/sereny/nova-cep'));
+        $this->loadJSONTranslationsFrom(resource_path('lang/vendor/diego-drese/nova-cep-old'));
     }
 
     /**
@@ -77,6 +77,6 @@ class NovaCepServiceProvider extends ServiceProvider
         $locale = $this->app->getLocale();
 
         Nova::translations(__DIR__ . "/../resources/lang/{$locale}.json");
-        Nova::translations(resource_path("lang/vendor/sereny/nova-cep/$locale.json"));
+        Nova::translations(resource_path("lang/vendor/diego-drese/nova-cep-old/$locale.json"));
     }
 }

@@ -1,5 +1,5 @@
 {
-    "name": "sereny/nova-cep",
+    "name": "diego-drese/nova-cep",
     "description": "A Laravel Nova Cep field.",
     "license": "MIT",
     "keywords": [ "laravel", "nova", "cep"],
@@ -18,13 +18,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Sereny\\NovaCep\\": "src/"
+            "DiegoDrese\\NovaCep\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Sereny\\NovaCep\\NovaCepServiceProvider"
+                "DiegoDrese\\NovaCep\\NovaCepServiceProvider"
             ]
         }
     },

@@ -31,7 +31,7 @@ export default {
   props: ['resourceName', 'resourceId', 'field'],
 
   data: () => ({
-    apiResourceUrl: '/sereny/nova-cep/cep',
+    apiResourceUrl: '/diego-drese/nova-cep-old/cep',
     loading: false
   }),
 

@@ -6,4 +6,4 @@ mix
   .setPublicPath('dist')
   .js('resources/js/field.js', 'js')
   .vue({ version: 3 })
-  .nova('sereny/nova-cep')
+  .nova('diego-drese/nova-cep-old')

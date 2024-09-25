@@ -1,6 +1,6 @@
 <?php
 
-namespace Sereny\NovaCep\Fields;
+namespace DiegoDrese\NovaCep\Fields;
 
 use Laravel\Nova\Fields\Field;
 use Laravel\Nova\Fields\SupportsDependentFields;

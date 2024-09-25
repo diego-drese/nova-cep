@@ -7,7 +7,7 @@ A Laravel Nova field enables automatic address data completion by CEP lookup.
 You can install the package in to a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require sereny/nova-cep
+composer require sereny/nova-cep-old
 ```
 
 ![example](/.github/images/example.gif)
@@ -76,7 +76,7 @@ namespace App\Nova;
 use Laravel\Nova\Fields\Hidden;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
-use Sereny\NovaCep\Fields\Cep;
+use DiegoDrese\NovaCep\Fields\Cep;
 
 class Address extends Resource
 {
